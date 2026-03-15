@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naila Salsabila | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Inter:wght@300;400;500;600&family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">naidev.id</a>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
+                    <i class="ri-moon-line" id="theme-icon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header id="about" class="hero">
+            <div class="hero-text">
+                <h1 class="hero-title">Hi, I'm Naila.<br> Beyond the Interface.</h1>
+                <p class="hero-subtitle">INFORMATION SYSTEMS STUDENT — WEB DEVELOPER</p>
+                <div class="hero-description">
+                    <p>I am an <span class="moving-word"></span> Information Systems student driven by <span class="highlight">digital innovation</span>. Combining System Analysis with UI/UX Design, I craft web applications that are both structurally robust and highly intuitive.</p>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-image-wrap">
+                    <img src="profile.jpeg" alt="Naila Salsabila" class="hero-image">
+                </div>
+                
+                <div class="ticker-wrap">
+                    <div class="ticker-content">
+                        <span>TRUST YOUR LOGIC AND KEEP BUILDING</span>
+                        <span>TRUST YOUR LOGIC AND KEEP BUILDING</span>
+                        <span>TRUST YOUR LOGIC AND KEEP BUILDING</span>
+                    </div>
+                    <div class="ticker-content">
+                        <span>TRUST YOUR LOGIC AND KEEP BUILDING</span>
+                        <span>TRUST YOUR LOGIC AND KEEP BUILDING</span>
+                        <span>TRUST YOUR LOGIC AND KEEP BUILDING</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="skills" class="skills-section">
+            <h2 class="section-title">My Toolkit</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="mac-dots">
+                            <span class="dot close"></span>
+                            <span class="dot min"></span>
+                            <span class="dot max"></span>
+                        </div>
+                        <h3>Development</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li onclick="animateItem(this)"><i class="ri-code-s-slash-line skill-icon"></i><span>VSCode & Netbeans</span></li>
+                        <li onclick="animateItem(this)"><i class="ri-parentheses-line skill-icon"></i><span>Python & JavaScript</span></li>
+                        <li onclick="animateItem(this)"><i class="ri-html5-line skill-icon"></i><span>HTML5 & CSS3</span></li>
+                        <li onclick="animateItem(this)"><i class="ri-database-line skill-icon"></i><span>SQL (MySQL)</span></li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="mac-dots">
+                            <span class="dot close"></span>
+                            <span class="dot min"></span>
+                            <span class="dot max"></span>
+                        </div>
+                        <h3>Analysis & Design</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li onclick="animateItem(this)"><i class="ri-pencil-ruler-2-line skill-icon"></i><span>UI/UX Design Tools</span></li>
+                        <li onclick="animateItem(this)"><i class="ri-flow-chart skill-icon"></i><span>UML / ERD Modeling</span></li>
+                        <li onclick="animateItem(this)"><i class="ri-search-eye-line skill-icon"></i><span>System Analysis</span></li>
+                        <li onclick="animateItem(this)"><i class="ri-bar-chart-box-line skill-icon"></i><span>IBM SPSS</span></li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="mac-dots">
+                            <span class="dot close"></span>
+                            <span class="dot min"></span>
+                            <span class="dot max"></span>
+                        </div>
+                        <h3>Workflow & OS</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li onclick="animateItem(this)"><i class="ri-git-branch-line skill-icon"></i><span>Git / GitHub</span></li>
+                        <li onclick="animateItem(this)"><i class="ri-terminal-box-line skill-icon"></i><span>Linux Environment</span></li>
+                        <li onclick="animateItem(this)"><i class="ri-table-line skill-icon"></i><span>Microsoft Excel</span></li>
+                        <li onclick="animateItem(this)"><i class="ri-palette-line skill-icon"></i><span>Canva</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-grid">
+                
+                <div class="project-card" onclick="openModal('modal-3')">
+                    <div class="card-image">
+                        <img src="netbeans1.jpeg" alt="Java GUI App">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title-wrap">
+                            <h3>Java Desktop App</h3>
+                        </div>
+                        <p>NetBeans & MySQL</p>
+                    </div>
+                </div>
+                
+                <div class="project-card" onclick="openModal('modal-1')">
+                    <div class="card-image">
+                        <img src="webport.jpeg" alt="Website Portfolio">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title-wrap">
+                            <h3>Website Portfolio</h3>
+                        </div>
+                        <p>HTML & CSS</p>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal('modal-mysql')">
+                    <div class="card-image">
+                        <img src="mysql.jpeg" alt="MySQL Database Project">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title-wrap">
+                            <h3>Product Database</h3>
+                        </div>
+                        <p>MySQL & MariaDB</p>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal('modal-python')">
+                    <div class="card-image">
+                        <img src="python.jpeg" alt="Python GUI Project">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title-wrap">
+                            <h3>Student Admission Form</h3>
+                        </div>
+                        <p>Python & Tkinter</p>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal('modal-dfd')">
+                    <div class="card-image">
+                        <img src="dfd.jpeg" alt="DFD Food Ordering Platform">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title-wrap">
+                            <h3>Food Ordering DFD</h3>
+                        </div>
+                        <p>System Analysis (draw.io)</p>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal('modal-erd')">
+                    <div class="card-image">
+                        <img src="erd.jpeg" alt="University Academic System ERD">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title-wrap">
+                            <h3>University Academic ERD</h3>
+                        </div>
+                        <p>Data Architecture (draw.io)</p>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal('modal-excel')">
+                    <div class="card-image">
+                        <img src="excel.jpeg" alt="Excel Statistical Analysis">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title-wrap">
+                            <h3>Excel Data Analysis</h3>
+                        </div>
+                        <p>Microsoft Excel</p>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal('modal-spss')">
+                    <div class="card-image">
+                        <img src="ibmspss.jpeg" alt="SPSS Hypothesis Testing">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-title-wrap">
+                            <h3>SPSS Data Analysis</h3>
+                        </div>
+                        <p>IBM SPSS</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer id="contact" class="footer">
+            <div class="footer-content">
+                <h2 class="section-title" style="margin-bottom: 15px;">Get In Touch</h2>
+                <p>Currently open to new opportunities, collaborations, and tech discussions. Feel free to reach out across any of these platforms!</p>
+                
+                <div class="social-links">
+                    <a href="mailto:nailasalsabiladev@gmail.com" aria-label="Email"><i class="ri-mail-line"></i></a>
+                    <a href="https://wa.me/6281373796419" target="_blank" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+                    <a href="https://linkedin.com/in/naiio" target="_blank" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                    <a href="https://github.com/naiio" target="_blank" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+                    <a href="https://www.instagram.com/naidev.id" target="_blank" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                    <a href="https://x.com/croftnai" target="_blank" aria-label="X (Twitter)"><i class="ri-twitter-x-line"></i></a>
+                    <a href="https://www.tiktok.com/@naidev.id" target="_blank" aria-label="TikTok"><i class="ri-tiktok-fill"></i></a>
+                    <a href="https://www.youtube.com/@nailaio" target="_blank" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Naila Salsabila. All rights reserved.<br>Crafted with HTML, CSS, and JavaScript for Web Programming Fundamental Assignment.</p>
+            </div>
+        </footer>
+    </main>
+
+    <div id="modal-3" class="modal">
+        <div class="modal-overlay" onclick="closeModal('modal-3')"></div>
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal-3')">×</button>
+            <div class="carousel">
+                <div class="carousel-track" id="track-3">
+                    <img src="netbeans1.jpeg" alt="Slide 1">
+                    <img src="netbeans2.jpeg" alt="Slide 2">
+                    <img src="netbeans3.jpeg" alt="Slide 3">
+                </div>
+                <button class="prev-btn" onclick="moveSlide('track-3', -1)">&#10094;</button>
+                <button class="next-btn" onclick="moveSlide('track-3', 1)">&#10095;</button>
+            </div>
+            <div class="modal-text">
+                <h2>Java GUI Application Development using NetBeans & MySQL Database</h2>
+                <p>A desktop application featuring a secure graphical user interface (GUI) for user authentication. Built with NetBeans Swing and integrated with a MySQL database to efficiently manage and validate login credentials.</p>
+                <a href="https://youtu.be/QaRqh4NsJ3I?si=w3X0feyIU2STC81y" target="_blank" class="view-link"><i class="ri-youtube-line" style="margin-right: 8px;"></i>Watch on YouTube</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-1" class="modal">
+        <div class="modal-overlay" onclick="closeModal('modal-1')"></div>
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal-1')">×</button>
+            <div class="carousel">
+                <div class="carousel-track" id="track-1">
+                    <img src="webport.jpeg" alt="Website Portfolio">
+                </div>
+            </div>
+            <div class="modal-text">
+                <h2>Website Portfolio</h2>
+                <p>This project is a personal website portfolio meticulously crafted from scratch using HTML and CSS. It demonstrates a strong understanding of web fundamentals, focusing on clean code structure, semantic HTML5 tags for accessibility, and modern CSS techniques for a responsive and visually appealing layout.</p>
+                <a href="https://naiio.github.io/assignment2-wp" target="_blank" class="view-link"><i class="ri-global-line" style="margin-right: 8px;"></i>View Portfolio</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-mysql" class="modal">
+        <div class="modal-overlay" onclick="closeModal('modal-mysql')"></div>
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal-mysql')">×</button>
+            <div class="carousel">
+                <div class="carousel-track" id="track-mysql">
+                    <img src="mysql1.jpeg" alt="MySQL Slide 1">
+                    <img src="mysql2.jpeg" alt="MySQL Slide 2">
+                    <img src="mysql3.jpeg" alt="MySQL Slide 3">
+                    <img src="mysql4.jpeg" alt="MySQL Slide 4">
+                    <img src="mysql5.jpeg" alt="MySQL Slide 5">
+                    <img src="mysql6.jpeg" alt="MySQL Slide 6">
+                </div>
+                <button class="prev-btn" onclick="moveSlide('track-mysql', -1)">&#10094;</button>
+                <button class="next-btn" onclick="moveSlide('track-mysql', 1)">&#10095;</button>
+            </div>
+            <div class="modal-text">
+                <h2>Culinary Business Product Database with MariaDB</h2>
+                <p>Designed and implemented the naiicireng database to efficiently manage product catalogs using MySQL/MariaDB. Showcased strong database administration skills by creating structured tables, modifying schemas with ALTER TABLE, and managing records through comprehensive data manipulation commands. Furthermore, applied advanced data retrieval methods utilizing WHERE, BETWEEN, IN, and aggregate functions to analyze product data.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-python" class="modal">
+        <div class="modal-overlay" onclick="closeModal('modal-python')"></div>
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal-python')">×</button>
+            <div class="carousel">
+                <div class="carousel-track" id="track-python">
+                    <img src="python1.jpeg" alt="Python Slide 1">
+                    <img src="python2.jpeg" alt="Python Slide 2">
+                    <img src="python3.jpeg" alt="Python Slide 3">
+                </div>
+                <button class="prev-btn" onclick="moveSlide('track-python', -1)">&#10094;</button>
+                <button class="next-btn" onclick="moveSlide('track-python', 1)">&#10095;</button>
+            </div>
+            <div class="modal-text">
+                <h2>Python GUI Student Admission Form</h2>
+                <p>A Python based desktop application utilizing Tkinter for student registrations. This intuitive GUI implements text entries for Name and NPM, a combobox for Program Study selection, and radio buttons for Gender. Includes built in error validation, alongside functional Save and Reset buttons for a seamless user experience.</p>
+                <a href="https://youtube.com/shorts/xtMyd1i9KUQ?si=0G4C4CAd3H46dFcZ" target="_blank" class="view-link"><i class="ri-youtube-line" style="margin-right: 8px;"></i>Watch on YouTube</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-dfd" class="modal">
+        <div class="modal-overlay" onclick="closeModal('modal-dfd')"></div>
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal-dfd')">×</button>
+            <div class="carousel">
+                <div class="carousel-track" id="track-dfd">
+                    <img src="dfd.jpeg" alt="DFD Food Ordering Platform">
+                </div>
+            </div>
+            <div class="modal-text">
+                <h2>DFD Levels 0 & 1: Food Ordering Platform</h2>
+                <p>End-to-end data flow mapping for a restaurant ordering platform. Designed standard Level 0 and Level 1 DFDs to visualize system boundaries, data stores, and process logic across customer transactions, kitchen fulfillment, and managerial reporting.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-erd" class="modal">
+        <div class="modal-overlay" onclick="closeModal('modal-erd')"></div>
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal-erd')">×</button>
+            <div class="carousel">
+                <div class="carousel-track" id="track-erd">
+                    <img src="erd.jpeg" alt="University Academic System ERD">
+                </div>
+            </div>
+            <div class="modal-text">
+                <h2>University Academic System</h2>
+                <p>Conceptual data architecture for university operations. Visualizes the data logic and relationships governing student enrollments, course catalogs, program affiliations, and faculty assignments, providing a clear schema blueprint for backend development.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-excel" class="modal">
+        <div class="modal-overlay" onclick="closeModal('modal-excel')"></div>
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal-excel')">×</button>
+            <div class="carousel">
+                <div class="carousel-track" id="track-excel">
+                    <img src="excel.jpeg" alt="Excel Statistical Analysis">
+                </div>
+            </div>
+            <div class="modal-text">
+                <h2>Data Grouping and Statistical Summarization with Microsoft Excel</h2>
+                <p>An end to end foundational statistical analysis performed entirely within Microsoft Excel. This project involves taking raw, unorganized dataset and systematically applying statistical rules to build a Frequency Distribution Table. Key tasks include data sorting, determining appropriate class intervals, and calculating core descriptive metrics (Mean, Median, Mode, and Quartiles). It highlights practical proficiency in basic data preparation and quantitative analysis.</p>
+                <a href="https://youtube.com/shorts/0xXTe18OPO0?si=d9XTr3rN5XOH8EFj" target="_blank" class="view-link"><i class="ri-youtube-line" style="margin-right: 8px;"></i>Watch on YouTube</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-spss" class="modal">
+        <div class="modal-overlay" onclick="closeModal('modal-spss')"></div>
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal-spss')">×</button>
+            <div class="carousel">
+                <div class="carousel-track" id="track-spss">
+                    <img src="ibmspss.jpeg" alt="SPSS Hypothesis Testing">
+                </div>
+            </div>
+            <div class="modal-text">
+                <h2>Hypothesis Testing and Comparative Analysis using SPSS</h2>
+                <p>A comprehensive demonstration of comparative statistical analysis using IBM SPSS. This portfolio piece details the end to end process of evaluating two independent groups. It covers the formulation of hypotheses, assumption checks using Shapiro-Wilk and Levene's tests, and the execution of an Independent t-Test to extract meaningful insights from experimental data.</p>
+                <a href="https://youtube.com/shorts/vsm9VtjUACc?si=NZxRWPP2G26UH3t-" target="_blank" class="view-link"><i class="ri-youtube-line" style="margin-right: 8px;"></i>Watch on YouTube</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
